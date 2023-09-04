@@ -1,0 +1,24 @@
+.logo__link{
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__link:hover {
+  text-decoration: none;
+}
+
+.logo__img{
+  width: 60px;
+  height: 60px;
+  color: #7FC92E;
+}
+
+.logo__text{
+  font-size: 32px;
+  line-height:115%;
+  font-weight: bold;
+  color: #333333;
+}
