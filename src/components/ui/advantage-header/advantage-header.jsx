@@ -6,7 +6,7 @@ import Title, { TitleSize } from "../title/title";
 function AdvantageHeader({ header, label, image, colorBg, colorLabel, }) {
 
   return (
-    <div className="advantage-header" >
+    <header className="advantage-header" >
       <Title size={TitleSize.SMALL}>{header}</Title>
       <span className="advantage-header__label" style={{ backgroundColor: colorLabel }}>{label}</span>
       <img
@@ -16,7 +16,7 @@ function AdvantageHeader({ header, label, image, colorBg, colorLabel, }) {
         height={52}
         alt="изображение еды"
       />
-    </div>
+    </header>
   );
 }
 
