@@ -1,12 +1,15 @@
 import advantages from '../../mocks/advantages-list';
-import PageWrapper from './../layout/page-wrapper/page-wrapper';
+import PageWrapper from '../layout/page-wrapper/page-wrapper';
+import { GlobalStyle } from './styles';
 
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
       <PageWrapper advantages={advantages} />
-    </div>
+
+    </>
   );
 }
 
