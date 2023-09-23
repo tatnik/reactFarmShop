@@ -1,7 +1,8 @@
 import React from "react";
 
-import "./advantage-card.css"
+
 import AdvantageHeader from "../advantage-header/advantage-header";
+import { AdvantageCardText, StyledAdvantageCard } from "./styles";
 
 const AdvantageFeature = {
   FARM: "farm",
@@ -33,7 +34,7 @@ function AdvantageCard({ header, image, text, feature }) {
       }
   }
   return (
-    <article className="advantage-card" style={{ backgroundColor: options.colorBg }}>
+    <StyledAdvantageCard $colorBg={options.colorBg}>
       <AdvantageHeader
         label={options.text}
         header={header}
@@ -41,10 +42,10 @@ function AdvantageCard({ header, image, text, feature }) {
         colorLabel={options.colorLabel}
         colorBg={options.colorBg}
       />
-      <p className="advantage-card__text">
+      <AdvantageCardText>
         {text}
-      </p>
-    </article>
+      </AdvantageCardText>
+    </StyledAdvantageCard>
   );
 }
 

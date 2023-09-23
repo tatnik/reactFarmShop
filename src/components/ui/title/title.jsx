@@ -1,5 +1,6 @@
 import React from "react";
-import "./title.css"
+import "./styles.js"
+import { StyledTitle } from "./styles.js";
 
 export const TitleSize = {
   BIG: "big",
@@ -7,21 +8,26 @@ export const TitleSize = {
   DEFAULT: ""
 };
 
-function Title({ children, size }) {
-  let TagName;
-  switch (size) {
-    case TitleSize.BIG:
-      TagName = "h1";
-      break;
-    case TitleSize.SMALL:
-      TagName = "h3";
-      break;
-    default:
-      TagName = "h2";
-  }
+export const TitleLevel = {
+  H1: "1",
+  H2: "2",
+  H3: "3",
+  H4: "4",
+  H5: "5",
+  H6: "6"
+};
 
-  return <TagName className={`title${size ? ` title_${size}` : ""}`
-  }> {children}</TagName>;
+function Title({
+  level = 1,
+  size,
+  children,
+  className }) {
+
+  return (
+    <StyledTitle as={`h${level}`} className={className} $size={size}>
+      {children}
+    </StyledTitle>
+  );
 }
 
 export default Title;

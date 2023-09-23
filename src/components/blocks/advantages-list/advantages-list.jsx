@@ -2,25 +2,26 @@ import React from "react";
 import Title from "../../ui/title/title";
 import Button from "../../ui/button/button";
 import AdvantageCard from "../../ui/advantage-card/advantage-card";
-import "./advantages-list.css"
+import { AdvantageItem, AdvantageList, StyledAdvantages } from "./styles";
+
 
 function AdvantagesList({ advantages }) {
-
   return (
-    advantages?.length ? (
-      <section className="advantages-list" >
-        <Title>Почему фермерские продукты лучше?</Title>
-        <ul className="advantages-list__list">
-          {advantages.map((advantage) => (
-            <li className="advantages-list__item" key={advantage.id}>
-              <AdvantageCard  {...advantage} />
-            </li>
-          ))}
-        </ul>
-        <Button minWidth={353}>Купить</Button>
-      </section>
-    )
-      : null
+    <StyledAdvantages>
+      {advantages?.length ? (
+        <>
+          <Title>Почему фермерские продукты лучше?</Title>
+          <AdvantageList $isGridList >
+            {advantages.map((advantage) => (
+              <AdvantageItem key={advantage.id}>
+                <AdvantageCard  {...advantage} />
+              </AdvantageItem>
+            ))}
+          </AdvantageList>
+        </>
+      ) : null}
+      <Button minWidth={353}>Купить</Button>
+    </StyledAdvantages>
   );
 }
 

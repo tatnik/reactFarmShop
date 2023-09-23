@@ -1,24 +1,21 @@
-.logo__link{
+import styled from "styled-components"
+
+export const StyledLogo = styled.a`
   display: flex;
   flex-direction: row;
   column-gap: 24px;
   align-items: center;
   text-decoration: none;
-}
 
-.logo__link:hover {
+  &:hover {
   text-decoration: none;
-}
+  }
+`
 
-.logo__img{
-  width: 60px;
-  height: 60px;
-  color: #7FC92E;
-}
 
-.logo__text{
+export const Text = styled.span`
   font-size: 32px;
   line-height:115%;
   font-weight: bold;
-  color: #333333;
-}
+  color: ${(props) => props.theme.colorBlackForText};
+`

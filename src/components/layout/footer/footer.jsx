@@ -1,14 +1,14 @@
 import React from "react";
 import Logo from "../../ui/logo/logo";
 import Copyright from './../../ui/copyright/copyright';
-import "./footer.css"
+import { StyledSection } from "./styles";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <Logo/>
-      <Copyright/>
-    </footer>
+    <StyledSection as="footer">
+      <Logo />
+      <Copyright />
+    </StyledSection>
   );
 }
 

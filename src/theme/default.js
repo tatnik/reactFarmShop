@@ -2,7 +2,7 @@ export const defaultTheme = {
   colorBlackForText: "#333333",
   colorWhite: "#ffffff",
   colorGray: "#f6f6f6",
-  colorForLightBG: "#6693B9",
+  colorForLightBG: "#D8ECFE",
   colorForGoodBG: "88AA4D",
   colorForBadBG: "#F75531",
   colorForLightGoodBG: "E1EDCE",

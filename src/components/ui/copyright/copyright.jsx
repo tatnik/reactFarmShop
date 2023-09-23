@@ -1,11 +1,13 @@
 import React from "react";
-import "./copyrigth.css"
+import { StyledCopyright } from "./styles";
+
 
 function Copyright() {
   return (
-  <span className="copyright">
-    Создано 2021
-  </span>);
+    <StyledCopyright>
+      Создано 2021
+    </StyledCopyright>
+  );
 }
 
 export default Copyright;

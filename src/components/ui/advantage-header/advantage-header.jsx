@@ -1,22 +1,22 @@
 import React from "react";
-import "./advantage-header.css"
+import "./styles.js"
 import Title, { TitleSize } from "../title/title";
+import { HeaderImage, Label, StyledAdvantageHeader } from "./styles.js";
 
 
 function AdvantageHeader({ header, label, image, colorBg, colorLabel, }) {
 
   return (
-    <header className="advantage-header" >
-      <Title size={TitleSize.SMALL}>{header}</Title>
-      <span className="advantage-header__label" style={{ backgroundColor: colorLabel }}>{label}</span>
-      <img
+    <StyledAdvantageHeader>
+      <Title size={TitleSize.SMALL} level="3">{header}</Title>
+      <Label $colorLabel={colorLabel}>{label}</Label>
+      <HeaderImage
         src={image}
-        className="advantage-header__image"
         width={52}
         height={52}
         alt="изображение еды"
       />
-    </header>
+    </StyledAdvantageHeader>
   );
 }
 

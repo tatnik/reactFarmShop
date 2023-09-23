@@ -4,12 +4,12 @@ import AdvantagesList from "../../blocks/advantages-list/advantages-list";
 
 
 
-function MainPage({advantages}) {
+function MainPage({ advantages }) {
   return (
-  <>
-  <About/>
-  <AdvantagesList advantages={advantages}/>
-  </>
+    <>
+      <About />
+      <AdvantagesList advantages={advantages} />
+    </>
   );
 }
 
