@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledButton = styled.a`
   display: block;
-  min-width: ${(props) => `${props.$minWidth}px` || "100%"};
+  min-width: ${(props) => props.$minWidth ? `${props.$minWidth}px` : "100%"};
   max-width: 700px;
   min-height: 60px;
   padding: 0px 24px;

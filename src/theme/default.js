@@ -14,5 +14,7 @@ export const defaultTheme = {
   fontFamily: '"Inter", "Arial", sans-serif',
   fontSize: "18px",
   footerHeight: "80px",
-  pageWidth: "1280px"
+  pageWidth: "1280px",
+  boxShadow: "0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 10px 20px 0px rgba(0, 0, 0, 0.04)",
+  boxBorder: "1px solid rgba(0, 0, 0, 0.10);"
 };

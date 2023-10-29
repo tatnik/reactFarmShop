@@ -14,6 +14,9 @@ export const StyledTitle = styled.h1`
     if (props.$size === TitleSize.SMALL) {
       fontSize = "28px";
     }
+    if (props.$size === TitleSize.SMALLEST) {
+      fontSize = "18px";
+    }
     return fontSize;
   }};
   line-height: ${(props) => {
