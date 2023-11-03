@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { TitleSize } from "./title";
 
 export const StyledTitle = styled.h1`
-  margin: 0;
+  margin:0;
+  margin-bottom: ${(props) => props.$margin || 0}px;
   padding: 0;
   font-weight: 700;
   line-height: 41px;
@@ -17,6 +18,9 @@ export const StyledTitle = styled.h1`
     if (props.$size === TitleSize.SMALLEST) {
       fontSize = "18px";
     }
+    if (props.$size === TitleSize.MICRO) {
+      fontSize = "14px";
+    }
     return fontSize;
   }};
   line-height: ${(props) => {
@@ -27,6 +31,12 @@ export const StyledTitle = styled.h1`
     }
     if (props.$size === TitleSize.SMALL) {
       lineHeight = "32px";
+    }
+    if (props.$size === TitleSize.SMALLEST) {
+      lineHeight = "1.5";
+    }
+    if (props.$size === TitleSize.MICRO) {
+      lineHeight = "1.5";
     }
     return lineHeight;
   }};

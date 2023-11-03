@@ -22,10 +22,12 @@ function Title({
   level = 1,
   size,
   children,
-  className }) {
+  className,
+  margin
+}) {
 
   return (
-    <StyledTitle as={`h${level}`} className={className} $size={size}>
+    <StyledTitle as={`h${level}`} className={className} $size={size} $margin={margin}>
       {children}
     </StyledTitle>
   );

@@ -10,11 +10,11 @@ const BuyPage = ({ products }) => {
 
   const handleOnChange = ({ value, checked }) => {
     if (checked) {
-      setCheckedProducts((checkedProducts) => [...checkedProducts, value]);
+      setCheckedProducts((checkedProducts) => [...checkedProducts, +value]);
       setActiveProduct(value);
     }
     else
-      setCheckedProducts((checkedProducts) => checkedProducts.filter((el) => el !== value));
+      setCheckedProducts((checkedProducts) => checkedProducts.filter((el) => el !== +value));
     ;
   }
 

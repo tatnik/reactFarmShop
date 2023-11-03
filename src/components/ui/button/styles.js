@@ -26,4 +26,8 @@ export const StyledButton = styled.a`
     background:${(props) => props.theme.colorForButtonHover};
     cursor:pointer;
   }
+
+  &:disabled{
+    background:${(props) => props.theme.colorGray};
+  }
 `;

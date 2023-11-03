@@ -7,4 +7,6 @@ export const StyledSection = styled(Section)`
   grid-template-columns: 1fr 2fr;
   padding: 40px ${(props) => props.theme.pagePadding};
   background-color: ${(props) => props.theme.colorGray};
-` 
+  column-gap: ${(props) => props.theme.indent};
+`;
+
