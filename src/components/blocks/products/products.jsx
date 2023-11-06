@@ -21,7 +21,7 @@ const Products = ({ products, activeProduct }) => {
       <Swiper
         ref={sliderRef}
         slidesPerView={2}
-        slidesPerGroup={2}
+        slidesPerGroup={1}
         direction={'vertical'}
         loop
         height={600}
