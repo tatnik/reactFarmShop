@@ -6,7 +6,7 @@ import { SwiperSlide } from "swiper/react";
 export const ProductsWrapper = styled.div`
 display:block;
 width:100%;
-height: 768px;
+height: calc(100vh - 170px);
 overflow:hidden;
 padding: 0;
 `;
@@ -30,10 +30,3 @@ export const StyleSlideMini = styled.div`
   background-size: cover;
   cursor: pointer;
 `;
-
-// export const SwiperSlide = styled.div`
-//   height: 288px;
-//   width: 100%;
-//   padding: ${(props) => props.theme.indent};
-//   box-sizing: border-box;
-// `

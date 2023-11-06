@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  width: ${(props) => props.theme.pageWidth};
+  width: 1280px;
   margin: 0 auto;
-  padding-bottom: ${(props) => props.theme.footerHeight};
   box-shadow: ${(props) => props.theme.boxShadow};
 }
 `

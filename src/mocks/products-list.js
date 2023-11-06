@@ -2,7 +2,6 @@ import image1 from '../assets/products-1.jpg'
 import image2 from '../assets/products-2.jpg'
 import image3 from '../assets/products-3.jpg'
 
-
 const products = [
   {
     id: 0,

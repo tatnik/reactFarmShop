@@ -1,10 +1,10 @@
 import React from "react";
 import Title, { TitleSize } from './../../ui/title/title';
-import { StyledSection, Text, Wrapper } from "./styles";
+import { StyledSectionAbout, Text, Wrapper } from "./styles";
 
 function About() {
   return (
-    <StyledSection >
+    <StyledSectionAbout >
       <Wrapper>
         <Title size={TitleSize.BIG}>Магазин фермерских продуктов с доставкой</Title>
         <Text>
@@ -12,7 +12,7 @@ function About() {
           Именно поэтому мы принимаем заказы заранее и доставляем продукты максимально свежими.
         </Text>
       </Wrapper>
-    </StyledSection>
+    </StyledSectionAbout>
   );
 }
 

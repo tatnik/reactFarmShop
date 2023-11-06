@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
   html {
-    height:100%
+    height:100%;
   }
 
   body,
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     position: relative;
-    min-height: 100 %;
+    min-height: 100vh;
     font-family: ${(props) => props.theme.fontFamily};
     font-size:  ${(props) => props.theme.fontSize};
     line-height: 27px;
@@ -21,4 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     color:  ${(props) => props.theme.colorBlackForText};
   }
 
+  html{
+      margin-left: calc(100vw - 100%);
+  }
 `;

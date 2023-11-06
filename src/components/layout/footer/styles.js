@@ -14,5 +14,5 @@ export const StyledSection = styled(Section)`
   justify-content: space-between;
   background-color: ${(props) => props.theme.colorWhite};
   align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.10);
 `

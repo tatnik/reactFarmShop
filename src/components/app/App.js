@@ -24,10 +24,7 @@ function App() {
             <Route path={AppRoute.BUY} element={<BuyPage products={products} />} />
           </Route>
         </Routes>
-
       </BrowserRouter>
-
-
     </>
   );
 }

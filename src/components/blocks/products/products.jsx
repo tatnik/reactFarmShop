@@ -22,8 +22,8 @@ const Products = ({ products, activeProduct }) => {
         ref={sliderRef}
         slidesPerView={2}
         direction={'vertical'}
-        height={768}
         loop
+        height={600}
       >
         {products.map((product) => (
           <StyledSwiperSlide key={product.id}>

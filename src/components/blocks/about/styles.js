@@ -2,10 +2,9 @@ import styled from "styled-components";
 import Section from "../../styled/section/section";
 import aboutImage from "../../../assets/about.png"
 
-export const StyledSection = styled(Section)`
-  padding-top: 183px;
-  padding-bottom: 183px;
+export const StyledSectionAbout = styled(Section)`
   padding-right: 553px;
+  min-height:600px;
   background-color:  ${(props) => props.theme.colorForLightBG};
   align-items: center;
   z-index: 1;
