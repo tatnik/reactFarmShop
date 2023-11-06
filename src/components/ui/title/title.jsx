@@ -6,6 +6,7 @@ export const TitleSize = {
   BIG: "big",
   SMALL: "small",
   SMALLEST: "smallest",
+  MICRO: "micro",
   DEFAULT: ""
 };
 

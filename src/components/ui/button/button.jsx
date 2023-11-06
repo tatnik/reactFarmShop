@@ -5,7 +5,7 @@ function Button({ children, minWidth, link, className, type, ...rest }) {
   return (
     <StyledButton
       $minWidth={minWidth}
-      {...(link ? { href: link } : { as: "button", type: (type || "button") })}
+      {...(link ? { to: link } : { as: "button", type: (type || "button") })}
       className={className}
       {...rest}
     >

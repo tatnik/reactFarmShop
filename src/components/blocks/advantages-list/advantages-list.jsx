@@ -1,8 +1,9 @@
 import React from "react";
-import Title from "../../ui/title/title";
+import Title, { TitleLevel } from "../../ui/title/title";
 import Button from "../../ui/button/button";
 import AdvantageCard from "../../ui/advantage-card/advantage-card";
 import { AdvantageItem, AdvantageList, StyledAdvantages } from "./styles";
+import { AppRoute } from './../../../consts';
 
 
 function AdvantagesList({ advantages }) {
@@ -10,7 +11,7 @@ function AdvantagesList({ advantages }) {
     <StyledAdvantages>
       {advantages?.length ? (
         <>
-          <Title>Почему фермерские продукты лучше?</Title>
+          <Title level={TitleLevel.H2} >Почему фермерские продукты лучше?</Title>
           <AdvantageList $isGridList >
             {advantages.map((advantage) => (
               <AdvantageItem key={advantage.id}>
@@ -20,7 +21,7 @@ function AdvantagesList({ advantages }) {
           </AdvantageList>
         </>
       ) : null}
-      <Button minWidth={353}>Купить</Button>
+      <Button minWidth={353} link={AppRoute.BUY}>Купить</Button>
     </StyledAdvantages>
   );
 }

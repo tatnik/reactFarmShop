@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "../header/header";
-import MainPage from "../../pages/main-page/main-page";
-import "./page-wrapper.css"
 import Footer from "../footer/footer";
-import BuyPage from './../../pages/buy-page/buy-page';
+import { Outlet } from "react-router-dom";
+import { Main } from "./styles";
 
 
 
@@ -12,9 +11,9 @@ function PageWrapper({ advantages, products }) {
   return (
     <>
       <Header />
-      <main className="page-wrapper__main" >
-        <BuyPage products={products} />
-      </main>
+      <Main>
+        <Outlet />
+      </Main>
       <Footer />
     </>
   );
